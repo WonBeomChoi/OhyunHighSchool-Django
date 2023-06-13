@@ -1,3 +1,9 @@
-    <li>
-        {{ memos }}
-    </li>
+{% block get_memo %}
+
+<h1> 메모들! </h1>
+{% for memo in memos %}
+	<p>제목 : {{ memo.title }}</p>
+	<p>내용 : {{ memo.content }}</p>
+{% endfor %}
+
+{% endblock get_memo %}
