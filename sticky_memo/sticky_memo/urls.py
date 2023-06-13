@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from memo import views as memo_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("memo/", memo_views.get_all_memo),
 ]
