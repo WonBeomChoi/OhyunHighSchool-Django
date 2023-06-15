@@ -12,6 +12,6 @@
   <body class="index">
     <h1>Sticky Memo</h1>
     <img src="{% static 'src/img/mainlogo.png' %}" alt="퇴근하는 자바독" class="logo" />
-    <a class="enter-btn" href="./memo">입장하기</a>
+    <a class="enter-btn" href="{% url 'memo_list' %}">입장하기</a>
   </body>
 </html>

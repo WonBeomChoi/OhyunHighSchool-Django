@@ -21,5 +21,5 @@ from memo import views as memo_views
 urlpatterns = [
     path('',views.index),
     path('admin/', admin.site.urls),
-    path("memo/", memo_views.get_all_memo),
+    path("memo/", memo_views.get_all_memo, name="memo_list"),
 ]
